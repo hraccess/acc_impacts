@@ -57,6 +57,11 @@ function acc_impacts_feeds_importer_default() {
             'target' => 'field_unit',
             'unique' => FALSE,
           ),
+          4 => array(
+            'source' => 'Access Constraint',
+            'target' => 'field_access_event',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '2',
         'input_format' => 'plain_text',

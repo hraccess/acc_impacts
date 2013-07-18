@@ -13,10 +13,10 @@ function acc_impacts_feeds_importer_default() {
   $feeds_importer = new stdClass();
   $feeds_importer->disabled = FALSE; /* Edit this to true to make a default feeds_importer disabled initially */
   $feeds_importer->api_version = 1;
-  $feeds_importer->id = 'impact';
+  $feeds_importer->id = 'acc_impacts';
   $feeds_importer->config = array(
     'name' => 'CSV Impact',
-    'description' => 'Import Imact from CVS file for Access Humanitarian project',
+    'description' => 'Import Impacts from CVS file for Access Humanitarian project',
     'fetcher' => array(
       'plugin_key' => 'FeedsHTTPFetcher',
       'config' => array(
@@ -77,7 +77,7 @@ function acc_impacts_feeds_importer_default() {
     'import_on_create' => 1,
     'process_in_background' => 1,
   );
-  $export['impact'] = $feeds_importer;
+  $export['acc_impacts'] = $feeds_importer;
 
   return $export;
 }

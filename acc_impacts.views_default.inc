@@ -237,7 +237,7 @@ function acc_impacts_views_default_views() {
   );
   $handler->display->display_options['filters']['field_access_event_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_event_tid']['vocabulary'] = 'access_constraint_type';
-  $translatables['impact'] = array(
+  $translatables['acc_impacts'] = array(
     t('Master'),
     t('more'),
     t('Apply'),

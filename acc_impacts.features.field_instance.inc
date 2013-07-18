@@ -10,9 +10,9 @@
 function acc_impacts_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'taxonomy_term-impact-field_access_event'
-  $field_instances['taxonomy_term-impact-field_access_event'] = array(
-    'bundle' => 'impact',
+  // Exported field_instance: 'taxonomy_term-acc_impacts-field_access_event'
+  $field_instances['taxonomy_term-acc_impacts-field_access_event'] = array(
+    'bundle' => 'acc_impacts',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -54,9 +54,9 @@ function acc_impacts_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-impact-field_unit'
-  $field_instances['taxonomy_term-impact-field_unit'] = array(
-    'bundle' => 'impact',
+  // Exported field_instance: 'taxonomy_term-acc_impacts-field_unit'
+  $field_instances['taxonomy_term-acc_impacts-field_unit'] = array(
+    'bundle' => 'acc_impacts',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -98,9 +98,9 @@ function acc_impacts_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-impact-name_field'
-  $field_instances['taxonomy_term-impact-name_field'] = array(
-    'bundle' => 'impact',
+  // Exported field_instance: 'taxonomy_term-acc_impacts-name_field'
+  $field_instances['taxonomy_term-acc_impacts-name_field'] = array(
+    'bundle' => 'acc_impacts',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',

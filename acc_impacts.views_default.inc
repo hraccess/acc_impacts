@@ -39,13 +39,13 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
   /* Field: Taxonomy term: Unit */
-  $handler->display->display_options['fields']['field_unit']['id'] = 'field_unit';
-  $handler->display->display_options['fields']['field_unit']['table'] = 'field_data_field_unit';
-  $handler->display->display_options['fields']['field_unit']['field'] = 'field_unit';
-  $handler->display->display_options['fields']['field_unit']['label'] = '';
-  $handler->display->display_options['fields']['field_unit']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_unit']['alter']['text'] = '([field_unit])';
-  $handler->display->display_options['fields']['field_unit']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_acc_unit']['id'] = 'field_acc_unit';
+  $handler->display->display_options['fields']['field_acc_unit']['table'] = 'field_data_field_acc_unit';
+  $handler->display->display_options['fields']['field_acc_unit']['field'] = 'field_acc_unit';
+  $handler->display->display_options['fields']['field_acc_unit']['label'] = '';
+  $handler->display->display_options['fields']['field_acc_unit']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_acc_unit']['alter']['text'] = '([field_acc_unit])';
+  $handler->display->display_options['fields']['field_acc_unit']['element_label_colon'] = FALSE;
   /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
@@ -73,7 +73,7 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'entityreference_style';
   $handler->display->display_options['style_options']['search_fields'] = array(
     'name' => 'name',
-    'field_unit' => 0,
+    'field_acc_unit' => 0,
   );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
@@ -108,7 +108,7 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'entityreference_style';
   $handler->display->display_options['style_options']['search_fields'] = array(
     'name' => 'name',
-    'field_unit' => 0,
+    'field_acc_unit' => 0,
   );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
@@ -143,7 +143,7 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'entityreference_style';
   $handler->display->display_options['style_options']['search_fields'] = array(
     'name' => 'name',
-    'field_unit' => 0,
+    'field_acc_unit' => 0,
   );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
@@ -178,7 +178,7 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'entityreference_style';
   $handler->display->display_options['style_options']['search_fields'] = array(
     'name' => 'name',
-    'field_unit' => 0,
+    'field_acc_unit' => 0,
   );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
@@ -213,7 +213,7 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'entityreference_style';
   $handler->display->display_options['style_options']['search_fields'] = array(
     'name' => 'name',
-    'field_unit' => 0,
+    'field_acc_unit' => 0,
   );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
@@ -252,7 +252,7 @@ function acc_impacts_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('([field_unit])'),
+    t('([field_acc_unit])'),
     t('Incident Impact'),
     t('br req into country Impact'),
     t('br req within country Impact'),

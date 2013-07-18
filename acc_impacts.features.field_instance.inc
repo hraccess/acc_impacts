@@ -54,8 +54,8 @@ function acc_impacts_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-acc_impacts-field_unit'
-  $field_instances['taxonomy_term-acc_impacts-field_unit'] = array(
+  // Exported field_instance: 'taxonomy_term-acc_impacts-field_acc_unit'
+  $field_instances['taxonomy_term-acc_impacts-field_acc_unit'] = array(
     'bundle' => 'acc_impacts',
     'default_value' => NULL,
     'deleted' => 0,
@@ -82,7 +82,7 @@ function acc_impacts_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_unit',
+    'field_name' => 'field_acc_unit',
     'label' => 'Unit',
     'required' => 0,
     'settings' => array(

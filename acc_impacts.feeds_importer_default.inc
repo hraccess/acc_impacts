@@ -55,7 +55,7 @@ function acc_impacts_feeds_importer_default() {
           ),
           3 => array(
             'source' => 'Unit',
-            'target' => 'field_unit',
+            'target' => 'field_acc_unit',
             'unique' => FALSE,
           ),
           4 => array(

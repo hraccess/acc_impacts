@@ -11,7 +11,7 @@ function acc_impacts_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'impact';
+  $view->name = 'acc_impacts';
   $view->description = '';
   $view->tag = 'Access';
   $view->base_table = 'taxonomy_term_data';
@@ -259,7 +259,7 @@ function acc_impacts_views_default_views() {
     t('policy Impact'),
     t('Temporary Constraint Impact'),
   );
-  $export['impact'] = $view;
+  $export['acc_impacts'] = $view;
 
   return $export;
 }

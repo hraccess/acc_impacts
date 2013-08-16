@@ -9,9 +9,9 @@
  */
 function acc_impacts_taxonomy_default_vocabularies() {
   return array(
-    'impact' => array(
+    'acc_impacts' => array(
       'name' => 'Impact',
-      'machine_name' => 'impact',
+      'machine_name' => 'acc_impacts',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',

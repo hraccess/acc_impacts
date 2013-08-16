@@ -98,8 +98,8 @@ function acc_impacts_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-acc_impacts-name_field'
-  $field_instances['taxonomy_term-acc_impacts-name_field'] = array(
+  // Exported field_instance: 'taxonomy_term-acc_impacts-field_name'
+  $field_instances['taxonomy_term-acc_impacts-field_name'] = array(
     'bundle' => 'acc_impacts',
     'default_value' => NULL,
     'deleted' => 0,
@@ -113,7 +113,7 @@ function acc_impacts_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'taxonomy_term',
-    'field_name' => 'name_field',
+    'field_name' => 'field_name',
     'label' => 'Name',
     'required' => TRUE,
     'settings' => array(
@@ -137,9 +137,9 @@ function acc_impacts_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Access Event');
-  t('Name');
-  t('Unit');
+  //t('Access Event');
+  //t('Name');
+  //t('Unit');
 
   return $field_instances;
 }

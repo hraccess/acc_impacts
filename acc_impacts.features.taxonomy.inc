@@ -10,7 +10,7 @@
 function acc_impacts_taxonomy_default_vocabularies() {
   return array(
     'acc_impacts' => array(
-      'name' => 'Impact',
+      'name' => 'Access Impact',
       'machine_name' => 'acc_impacts',
       'description' => '',
       'hierarchy' => 0,

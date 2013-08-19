@@ -38,7 +38,7 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Unit */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_acc_unit']['id'] = 'field_acc_unit';
   $handler->display->display_options['fields']['field_acc_unit']['table'] = 'field_data_field_acc_unit';
   $handler->display->display_options['fields']['field_acc_unit']['field'] = 'field_acc_unit';

@@ -13,6 +13,7 @@ features[ctools][] = feeds:feeds_importer_default:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[feeds_importer][] = acc_impacts
+features[field_base][] = field_unit
 features[field_instance][] = taxonomy_term-acc_impacts-field_access_event
 features[field_instance][] = taxonomy_term-acc_impacts-field_unit
 features[field_instance][] = taxonomy_term-acc_impacts-name_field
@@ -23,4 +24,6 @@ features_exclude[dependencies][features] = features
 features_exclude[dependencies][feeds] = feeds
 features_exclude[dependencies][options] = options
 features_exclude[dependencies][taxonomy] = taxonomy
-
+features_exclude[field][taxonomy_term-acc_impacts-name_field] = taxonomy_term-acc_impacts-name_field
+features_exclude[field][taxonomy_term-acc_impacts-field_access_event] = taxonomy_term-acc_impacts-field_access_event
+features_exclude[field][taxonomy_term-acc_impacts-field_unit] = taxonomy_term-acc_impacts-field_unit

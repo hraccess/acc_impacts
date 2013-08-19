@@ -66,23 +66,11 @@ function acc_impacts_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
-      ),
-      'entityreference_view_widget' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_acc_unit',
+    'field_name' => 'field_unit',
     'label' => 'Unit',
     'required' => 0,
     'settings' => array(
@@ -92,9 +80,11 @@ function acc_impacts_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => 0,
+      ),
       'type' => 'options_select',
-      'weight' => 2,
+      'weight' => 32,
     ),
   );
 
@@ -137,9 +127,9 @@ function acc_impacts_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  //t('Access Event');
-  //t('Name');
-  //t('Unit');
+  t('Access Event');
+  t('Name');
+  t('Unit');
 
   return $field_instances;
 }

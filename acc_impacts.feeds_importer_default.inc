@@ -55,11 +55,11 @@ function acc_impacts_feeds_importer_default() {
           ),
           3 => array(
             'source' => 'Unit',
-            'target' => 'field_acc_unit',
+            'target' => 'field_unit',
             'unique' => FALSE,
           ),
           4 => array(
-            'source' => 'Access Constraint',
+            'source' => 'Access Event',
             'target' => 'field_access_event',
             'unique' => FALSE,
           ),
@@ -67,7 +67,7 @@ function acc_impacts_feeds_importer_default() {
         'update_existing' => '0',
         'input_format' => 'plain_text',
         'skip_hash_check' => 0,
-        'bundle' => 'impact',
+        'bundle' => 'acc_impacts',
       ),
     ),
     'content_type' => '',

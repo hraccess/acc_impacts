@@ -38,20 +38,12 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_acc_unit']['id'] = 'field_acc_unit';
-  $handler->display->display_options['fields']['field_acc_unit']['table'] = 'field_data_field_acc_unit';
-  $handler->display->display_options['fields']['field_acc_unit']['field'] = 'field_acc_unit';
-  $handler->display->display_options['fields']['field_acc_unit']['label'] = '';
-  $handler->display->display_options['fields']['field_acc_unit']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_acc_unit']['alter']['text'] = '([field_acc_unit])';
-  $handler->display->display_options['fields']['field_acc_unit']['element_label_colon'] = FALSE;
   /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
-    'acc_impact' => 'acc_impact',
+    'acc_impacts' => 'acc_impacts',
   );
   /* Filter criterion: Taxonomy term: Access Event (field_access_event) */
   $handler->display->display_options['filters']['field_access_event_tid']['id'] = 'field_access_event_tid';
@@ -86,14 +78,14 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
-    'acc_impact' => 'acc_impact',
+    'acc_impacts' => 'acc_impacts',
   );
   /* Filter criterion: Taxonomy term: Access Event (field_access_event) */
   $handler->display->display_options['filters']['field_access_event_tid']['id'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['table'] = 'field_data_field_access_event';
   $handler->display->display_options['filters']['field_access_event_tid']['field'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['value'] = array(
-    50 => '50',
+    569 => '569',
   );
   $handler->display->display_options['filters']['field_access_event_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_event_tid']['vocabulary'] = 'access_constraint_type';
@@ -121,14 +113,14 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
-    'acc_impact' => 'acc_impact',
+    'acc_impacts' => 'acc_impacts',
   );
   /* Filter criterion: Taxonomy term: Access Event (field_access_event) */
   $handler->display->display_options['filters']['field_access_event_tid']['id'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['table'] = 'field_data_field_access_event';
   $handler->display->display_options['filters']['field_access_event_tid']['field'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['value'] = array(
-    48 => '48',
+    567 => '567',
   );
   $handler->display->display_options['filters']['field_access_event_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_event_tid']['vocabulary'] = 'access_constraint_type';
@@ -156,14 +148,14 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
-    'acc_impact' => 'acc_impact',
+    'acc_impacts' => 'acc_impacts',
   );
   /* Filter criterion: Taxonomy term: Access Event (field_access_event) */
   $handler->display->display_options['filters']['field_access_event_tid']['id'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['table'] = 'field_data_field_access_event';
   $handler->display->display_options['filters']['field_access_event_tid']['field'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['value'] = array(
-    49 => '49',
+    568 => '568',
   );
   $handler->display->display_options['filters']['field_access_event_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_event_tid']['vocabulary'] = 'access_constraint_type';
@@ -191,14 +183,14 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
-    'acc_impact' => 'acc_impact',
+    'acc_impacts' => 'acc_impacts',
   );
   /* Filter criterion: Taxonomy term: Access Event (field_access_event) */
   $handler->display->display_options['filters']['field_access_event_tid']['id'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['table'] = 'field_data_field_access_event';
   $handler->display->display_options['filters']['field_access_event_tid']['field'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['value'] = array(
-    417 => '417',
+    570 => '570',
   );
   $handler->display->display_options['filters']['field_access_event_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_event_tid']['vocabulary'] = 'access_constraint_type';
@@ -226,14 +218,14 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
-    'acc_impact' => 'acc_impact',
+    'acc_impacts' => 'acc_impacts',
   );
   /* Filter criterion: Taxonomy term: Access Event (field_access_event) */
   $handler->display->display_options['filters']['field_access_event_tid']['id'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['table'] = 'field_data_field_access_event';
   $handler->display->display_options['filters']['field_access_event_tid']['field'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['value'] = array(
-    52 => '52',
+    571 => '571',
   );
   $handler->display->display_options['filters']['field_access_event_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_event_tid']['vocabulary'] = 'access_constraint_type';
@@ -252,7 +244,6 @@ function acc_impacts_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('([field_acc_unit])'),
     t('Incident Impact'),
     t('br req into country Impact'),
     t('br req within country Impact'),

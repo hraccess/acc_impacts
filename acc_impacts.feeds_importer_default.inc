@@ -36,7 +36,7 @@ function acc_impacts_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsTermProcessor',
       'config' => array(
-        'vocabulary' => 'impact',
+        'vocabulary' => 'acc_impact',
         'mappings' => array(
           0 => array(
             'source' => 'Name:en',

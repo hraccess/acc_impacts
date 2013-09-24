@@ -52,7 +52,6 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['filters']['field_access_event_tid']['value'] = array(
     673 => '673',
   );
-  $handler->display->display_options['filters']['field_access_event_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_event_tid']['vocabulary'] = 'access_constraint_type';
 
   /* Display: Incident Impact */
@@ -85,9 +84,8 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['filters']['field_access_event_tid']['table'] = 'field_data_field_access_event';
   $handler->display->display_options['filters']['field_access_event_tid']['field'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['value'] = array(
-    228 => '228',
+    461 => '461',
   );
-  $handler->display->display_options['filters']['field_access_event_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_event_tid']['vocabulary'] = 'access_constraint_type';
 
   /* Display: br req into country Impact */
@@ -120,9 +118,8 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['filters']['field_access_event_tid']['table'] = 'field_data_field_access_event';
   $handler->display->display_options['filters']['field_access_event_tid']['field'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['value'] = array(
-    226 => '226',
+    459 => '459',
   );
-  $handler->display->display_options['filters']['field_access_event_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_event_tid']['vocabulary'] = 'access_constraint_type';
 
   /* Display: br req within country Impact */
@@ -155,9 +152,8 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['filters']['field_access_event_tid']['table'] = 'field_data_field_access_event';
   $handler->display->display_options['filters']['field_access_event_tid']['field'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['value'] = array(
-    227 => '227',
+    460 => '460',
   );
-  $handler->display->display_options['filters']['field_access_event_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_event_tid']['vocabulary'] = 'access_constraint_type';
 
   /* Display: policy Impact */
@@ -190,9 +186,8 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['filters']['field_access_event_tid']['table'] = 'field_data_field_access_event';
   $handler->display->display_options['filters']['field_access_event_tid']['field'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['value'] = array(
-    570 => '570',
+    462 => '462',
   );
-  $handler->display->display_options['filters']['field_access_event_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_event_tid']['vocabulary'] = 'access_constraint_type';
 
   /* Display: Temporary Constraint Impact */
@@ -225,9 +220,8 @@ function acc_impacts_views_default_views() {
   $handler->display->display_options['filters']['field_access_event_tid']['table'] = 'field_data_field_access_event';
   $handler->display->display_options['filters']['field_access_event_tid']['field'] = 'field_access_event_tid';
   $handler->display->display_options['filters']['field_access_event_tid']['value'] = array(
-    571 => '571',
+    463 => '463',
   );
-  $handler->display->display_options['filters']['field_access_event_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_event_tid']['vocabulary'] = 'access_constraint_type';
   $translatables['acc_impacts'] = array(
     t('Master'),

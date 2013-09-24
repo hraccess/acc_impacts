@@ -22,19 +22,7 @@ function acc_impacts_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 0,
-      ),
-      'entityreference_view_widget' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'taxonomy_term',
@@ -50,7 +38,7 @@ function acc_impacts_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 1,
+      'weight' => 4,
     ),
   );
 
@@ -84,7 +72,7 @@ function acc_impacts_field_default_field_instances() {
         'apply_chosen' => 0,
       ),
       'type' => 'options_select',
-      'weight' => 32,
+      'weight' => 3,
     ),
   );
 
@@ -121,7 +109,7 @@ function acc_impacts_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -5,
+      'weight' => 0,
     ),
   );
 

@@ -5,3 +5,10 @@
  */
 
 include_once 'acc_impacts.features.inc';
+
+/**
+ * Implements hook_cron()
+ */
+function acc_impacts_cron() {
+    humanitarianresponse_core_feeds_check('acc_impacts_feed', 'http://terms.humanitarianresponse.info/impacts.csv');
+}

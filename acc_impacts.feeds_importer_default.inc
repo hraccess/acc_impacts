@@ -13,7 +13,7 @@ function acc_impacts_feeds_importer_default() {
   $feeds_importer = new stdClass();
   $feeds_importer->disabled = FALSE; /* Edit this to true to make a default feeds_importer disabled initially */
   $feeds_importer->api_version = 1;
-  $feeds_importer->id = 'acc_impacts';
+  $feeds_importer->id = 'acc_impacts_feed';
   $feeds_importer->config = array(
     'name' => 'CSV Impact',
     'description' => 'Import Impacts from CVS file for Access Humanitarian project',
@@ -59,6 +59,11 @@ function acc_impacts_feeds_importer_default() {
             'unique' => FALSE,
           ),
           4 => array(
+            'source' => 'UUID',
+            'target' => 'uuid:uuid',
+            'unique' => FALSE,
+          ),
+          5 => array(
             'source' => 'Access Event',
             'target' => 'field_access_event',
             'unique' => FALSE,
@@ -77,7 +82,7 @@ function acc_impacts_feeds_importer_default() {
     'import_on_create' => 1,
     'process_in_background' => 1,
   );
-  $export['acc_impacts'] = $feeds_importer;
+  $export['acc_impacts_feed'] = $feeds_importer;
 
   return $export;
 }

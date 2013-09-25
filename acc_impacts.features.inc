@@ -7,12 +7,10 @@
 /**
  * Implements hook_ctools_plugin_api().
  */
-function acc_impacts_ctools_plugin_api() {
-  list($module, $api) = func_get_args();
+function acc_impacts_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "feeds" && $api == "feeds_importer_default") {
     return array("version" => "1");
   }
-  list($module, $api) = func_get_args();
   if ($module == "feeds_tamper" && $api == "feeds_tamper_default") {
     return array("version" => "2");
   }
@@ -21,6 +19,6 @@ function acc_impacts_ctools_plugin_api() {
 /**
  * Implements hook_views_api().
  */
-function acc_impacts_views_api() {
+function acc_impacts_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }

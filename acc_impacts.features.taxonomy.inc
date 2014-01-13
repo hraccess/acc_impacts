@@ -9,10 +9,10 @@
  */
 function acc_impacts_taxonomy_default_vocabularies() {
   return array(
-    'acc_impacts' => array(
-      'name' => 'Access Impact',
-      'machine_name' => 'acc_impacts',
-      'description' => '',
+    'acc_impact_types' => array(
+      'name' => 'Access Impact Types',
+      'machine_name' => 'acc_impact_types',
+      'description' => 'Provides an Impact Types taxonomy',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,

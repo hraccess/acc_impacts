@@ -10,56 +10,26 @@
 function acc_impacts_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'taxonomy_term-acc_impacts-field_access_event'
-  $field_instances['taxonomy_term-acc_impacts-field_access_event'] = array(
-    'bundle' => 'acc_impacts',
+  // Exported field_instance: 'field_collection_item-field_acc_impacts-field_acc_impact_type'
+  $field_instances['field_collection_item-field_acc_impacts-field_acc_impact_type'] = array(
+    'bundle' => 'field_acc_impacts',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 0,
       ),
     ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_access_event',
-    'label' => 'Access Event',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-acc_impacts-field_unit'
-  $field_instances['taxonomy_term-acc_impacts-field_unit'] = array(
-    'bundle' => 'acc_impacts',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_unit',
-    'label' => 'Unit',
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_acc_impact_type',
+    'label' => 'Type of impact',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -69,55 +39,58 @@ function acc_impacts_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'apply_chosen' => 0,
+        'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 1,
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-acc_impacts-name_field'
-  $field_instances['taxonomy_term-acc_impacts-name_field'] = array(
-    'bundle' => 'acc_impacts',
+  // Exported field_instance: 'field_collection_item-field_acc_impacts-field_acc_impact_value'
+  $field_instances['field_collection_item-field_acc_impacts-field_acc_impact_value'] = array(
+    'bundle' => 'field_acc_impacts',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 1,
       ),
     ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'name_field',
-    'label' => 'Name',
-    'required' => TRUE,
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_acc_impact_value',
+    'label' => 'Value',
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
-      'hide_label' => array(
-        'entity' => FALSE,
-        'page' => FALSE,
-      ),
-      'text_processing' => 0,
+      'max' => '',
+      'min' => 0,
+      'prefix' => '',
+      'suffix' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 0,
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 2,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Access Event');
-  t('Name');
-  t('Unit');
+  t('Type of impact');
+  t('Value');
 
   return $field_instances;
 }

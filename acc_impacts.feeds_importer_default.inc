@@ -13,10 +13,10 @@ function acc_impacts_feeds_importer_default() {
   $feeds_importer = new stdClass();
   $feeds_importer->disabled = FALSE; /* Edit this to true to make a default feeds_importer disabled initially */
   $feeds_importer->api_version = 1;
-  $feeds_importer->id = 'acc_impacts_feed';
+  $feeds_importer->id = 'acc_impact_types';
   $feeds_importer->config = array(
-    'name' => 'CSV Impact',
-    'description' => 'Import Impacts from CVS file for Access Humanitarian project',
+    'name' => 'CSV Access Impact Types',
+    'description' => 'Import impact types from a CSV file',
     'fetcher' => array(
       'plugin_key' => 'FeedsHTTPFetcher',
       'config' => array(
@@ -36,7 +36,7 @@ function acc_impacts_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsTermProcessor',
       'config' => array(
-        'vocabulary' => 'acc_impact',
+        'vocabulary' => 0,
         'mappings' => array(
           0 => array(
             'source' => 'Name:en',
@@ -44,35 +44,20 @@ function acc_impacts_feeds_importer_default() {
             'unique' => 1,
           ),
           1 => array(
-            'source' => 'GUID',
-            'target' => 'guid',
-            'unique' => FALSE,
-          ),
-          2 => array(
             'source' => 'Parent',
             'target' => 'parent',
             'unique' => FALSE,
           ),
-          3 => array(
-            'source' => 'Unit',
-            'target' => 'field_unit',
-            'unique' => FALSE,
-          ),
-          4 => array(
-            'source' => 'UUID',
-            'target' => 'uuid:uuid',
-            'unique' => FALSE,
-          ),
-          5 => array(
-            'source' => 'Access Event',
-            'target' => 'field_access_event',
+          2 => array(
+            'source' => 'GUID',
+            'target' => 'guid',
             'unique' => FALSE,
           ),
         ),
         'update_existing' => '2',
         'input_format' => 'plain_text',
         'skip_hash_check' => 0,
-        'bundle' => 'acc_impacts',
+        'bundle' => 'acc_impact_types',
       ),
     ),
     'content_type' => '',
@@ -80,9 +65,9 @@ function acc_impacts_feeds_importer_default() {
     'import_period' => '-1',
     'expire_period' => 3600,
     'import_on_create' => 1,
-    'process_in_background' => 1,
+    'process_in_background' => 0,
   );
-  $export['acc_impacts_feed'] = $feeds_importer;
+  $export['acc_impact_types'] = $feeds_importer;
 
   return $export;
 }

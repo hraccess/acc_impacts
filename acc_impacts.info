@@ -19,3 +19,5 @@ features[field_base][] = field_acc_impacts
 features[field_instance][] = field_collection_item-field_acc_impacts-field_acc_impact_type
 features[field_instance][] = field_collection_item-field_acc_impacts-field_acc_impact_value
 features[taxonomy][] = acc_impact_types
+features[user_permission][] = delete terms in acc_impact_types
+features[user_permission][] = edit terms in acc_impact_types
